@@ -19,3 +19,14 @@ Namaste React JS
 - Tree shaking -remove unused codes
 
 https://parceljs.org/
+
+# JSX
+- JSX - HTML like or XML like syntax.
+- JSX is not HTML inside JavaScript.
+- JS Engine doesn't understand JSX(Not pure JavaScript).
+- JSX code transpiled before it goes to JS Engine.
+- Transpiled means converting code into browser understandable code.
+- PARCEL -> BABEL (Complier to converted code)
+- JSX -> React.createElement -> React Element - Object -> HTMLElement (render).
+- const jsxheading = <h1 className="heading"> JSX starting...</h1>;
+- className="heading" for JSX syntax which is converted into HTML syntax in browser class="heading"
