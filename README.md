@@ -27,6 +27,14 @@ https://parceljs.org/
 - JSX code transpiled before it goes to JS Engine.
 - Transpiled means converting code into browser understandable code.
 - PARCEL -> BABEL (Complier to converted code)
-- JSX -> React.createElement -> React Element - Object -> HTMLElement (render).
+- JSX -> Babel transpiles it to React.createElement -> React Element - Object -> HTMLElement (render).
 - const jsxheading = <h1 className="heading"> JSX starting...</h1>;
 - className="heading" for JSX syntax which is converted into HTML syntax in browser class="heading"
+- To write JSX in multiple lines wrap it in round brackets()
+- JSX can handle malicious data. It prevents cross site scripting attacks.
+
+# React Component
+- Component Inside component is called React component composition.
+- the JSX tag name convention (lowercase names refer to built-in components, capitalized names refer to custom components).
+- While a React element is a plain object describing a part of the UI, a React component is a function or a class that can produce React elements and manage their state and lifecycle. Components can return multiple elements, components, strings, numbers, or any other types React can render.
+- We can write anything inside anything. here anything refers to React Element / React Component. 
