@@ -1,35 +1,77 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 
-const heading = React.createElement(
-  "div",
-  { id: "parent" },
-  "Welcome to Namaste react js"
-);
+/**
+ * Header
+ *  -Logo
+ *  -Home
+ *  -About us
+ *  -Sign In
+ *  -Cart
+ * Body
+ *  -Restaurant Container
+ *  -Restaurant Cards
+ *    -Food Img
+ *    -Name of the Restaurant
+ *    -Rating,Duration,Cuisine
+ * Footer
+ *  -CopyRights
+ *  -Terms and Conditions
+ */
 
-//Initial Code
- const root = ReactDOM.createRoot(document.getElementById("root"));
- /* root.render(heading);
-  console.log(heading); */
+const Header = () =>{
+  return(
+    <div className="header" id="header_container">
+      <div className="logo-container">
+        <img alt="No image" src="https://www.clipartmax.com/png/middle/111-1118804_android-food-delivery-apps.png"/>
+      </div>
+      <div className="nav-items">
+        <ul>
+          <li>Home</li>
+          <li>About Us</li>
+          <li>Sign In</li>
+          <li>Cart</li>
+        </ul>
+      </div>
+    </div>
+  );
+};
 
-//JSX -> React.createElement -> ReactElemt -Object -> HTMLElement (render)
-/* const jsxheading = <h1 className="heading">JSX starting...</h1>;
-  root.render(jsxheading);
-  console.log(jsxheading); */
+const RestaurantCards =({resName,rating,duration})=>{
+  //const [resName,rating,duration] = props;
+  //console.log(props);
+  return(
+    <div className="res-cards">
+      <img alt="No image" src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/pi79pzy2suorndvulzkb"></img>
+      <h3>{resName}</h3>
+      <h4>{rating}</h4>
+      <h4>{duration}</h4>
+      <h4>South indian, Biriyani ,..</h4>
+    </div>
+  );
+};
 
-//React Element
-const reactElement = <h1> Brindha D is Expert in React JS!!</h1>;
 
-//React Functional Component
+const Body = () =>{
+  return(
+    <div className="body">
+      <div className="res-container">
+        <RestaurantCards resName="Magadhi" rating="4.6 starts" duration="35 mins" cuisines="South indian, Biriyani ,.."/>
+        <RestaurantCards resName="Ajanta Foods" rating="4.2 starts" duration="25 mins" cuisines="South indian, Veg ,.."/>
+      </div>
+    </div>
+  );
+};
 
-const Title = () => (<h1>Hello Universe!</h1>);
-console.log(Title);
-// *Component Inside component is called React component composition.
-const HeadingComponent = () => (
-  <>
-  <h1> Brindha D is Expert in Frontend Development!!</h1>,
-  <h1> Brindha D is Expert in Frontend Development!!</h1>
-  </>
-);
+const AppLayout = () => {
+  return(
+      <div className="app-layout">
+        <Header/>
+        <Body/>
+      </div>
+    );
+  };
 
-root.render(<HeadingComponent />);
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(<AppLayout />);

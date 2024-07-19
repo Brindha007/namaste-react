@@ -32,9 +32,25 @@ https://parceljs.org/
 - className="heading" for JSX syntax which is converted into HTML syntax in browser class="heading"
 - To write JSX in multiple lines wrap it in round brackets()
 - JSX can handle malicious data. It prevents cross site scripting attacks.
+- JSX much more readable and make it faster than react.
+- {} inside paranthesis we can write any kind of Javascript expressions/Functions.
 
 # React Component
 - Component Inside component is called React component composition.
 - the JSX tag name convention (lowercase names refer to built-in components, capitalized names refer to custom components).
 - While a React element is a plain object describing a part of the UI, a React component is a function or a class that can produce React elements and manage their state and lifecycle. Components can return multiple elements, components, strings, numbers, or any other types React can render.
 - We can write anything inside anything. here anything refers to React Element / React Component. 
+- 1.Class based components 2.Function based components
+- Function based components is a function that returns piece of JSX code / React Element
+- Arrow functions most widely used for function declarion in React JS.
+
+# Props (Properties)
+- Props is used for dynamically passing data to React components.
+- Props is Object
+- In Real time we are fetching data from JSON and passing it through props.
+
+# Config Driven UI (System design interview imp qus)
+- We won't design website based on location.
+- Our website driven by data
+- This is known as Config Driven UI.
+
