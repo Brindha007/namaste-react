@@ -54,3 +54,30 @@ https://parceljs.org/
 - Our website driven by data
 - This is known as Config Driven UI.
 
+# map
+- In JavaScript, map() is a method of the Array object. It creates a new array by calling a function on every element of the original array and storing the results in a new array. map() returns the new array, and the original array is unchanged.
+
+# Destructuring and Optional Chaining
+- Array destructuring is a unique technique that allows you to neatly extract an array’s value into new variables.
+-Old way: 
+    const profile = ["Oluwatobi", "Sofela", "codesweetly.com"];
+
+    const firstName = profile[0];
+    const lastName = profile[1];
+    const website = profile[2];
+
+    console.log(firstName); // "Oluwatobi"
+    console.log(lastName); // "Sofela"
+    console.log(website); // "codesweetly.com"
+
+-New way using destructuring
+    const profile = ["Oluwatobi", "Sofela", "codesweetly.com"];
+
+    const [firstName, lastName, website] = profile;
+
+    console.log(firstName); // "Oluwatobi"
+    console.log(lastName); // "Sofela"
+    console.log(website); // "codesweetly.com"
+
+
+
