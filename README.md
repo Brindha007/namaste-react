@@ -56,6 +56,16 @@ https://parceljs.org/
 
 # map
 - In JavaScript, map() is a method of the Array object. It creates a new array by calling a function on every element of the original array and storing the results in a new array. map() returns the new array, and the original array is unchanged.
+- If you don't know count of list use map.
+- Always give key unique id.
+- https://robinpokorny.com/blog/index-as-a-key-is-an-anti-pattern/
+- Let me explain, a key is the only thing React uses to identify DOM elements. What happens if you push an item to the list or remove something in the middle? If the key is same as before React assumes that the DOM element represents the same component as before. But that is no longer true.
+- To help you decide, I put together three conditions which these examples have in common:
+
+        1. the list and items are static–they are not computed and do not change;
+        2. the items in the list have no ids;
+        3. the list is never reordered or filtered.
+        When all of them are met, you may safely use the index as a key.
 
 # Destructuring and Optional Chaining
 - Array destructuring is a unique technique that allows you to neatly extract an array’s value into new variables.
@@ -78,6 +88,18 @@ https://parceljs.org/
     console.log(firstName); // "Oluwatobi"
     console.log(lastName); // "Sofela"
     console.log(website); // "codesweetly.com"
+
+# Optional Chaining
+-  //console.log(restaurantList?.na);
+- //console.log(restaurantList.name?.cuisines);
+- It provides a concise syntax for accessing properties deep within nested objects without encountering errors due to null or undefined values. This helps in writing cleaner and more readable code by reducing the need for explicit null checks and conditionals.
+
+# Export and Import
+
+Syntax	    Export statement	                     Import statement
+Default	    export default function Button() {}	     import Button from './Button.js';
+Named	    export function Button() {}	             import { Button } from './Button.js';
+
 
 
 

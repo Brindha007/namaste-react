@@ -33,7 +33,7 @@
 .res-cards{
     padding: 5px;
     margin: 5px;
-    background: chocolate;
+    background: beige;
     width: 200px;
 }
 .res-cards:hover{
@@ -44,4 +44,7 @@
     width: 100%;
 }
 
+.filter-btn {
+    margin: 5px;
+}
 /* * Body restauant container  Css Ends */

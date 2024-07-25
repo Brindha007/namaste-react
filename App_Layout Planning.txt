@@ -1,0 +1,17 @@
+/**
+ * Header
+ *  -Logo
+ *  -Home
+ *  -About us
+ *  -Sign In
+ *  -Cart
+ * Body
+ *  -Restaurant Container
+ *  -Restaurant Cards
+ *    -Food Img
+ *    -Name of the Restaurant
+ *    -Rating,Duration,Cuisine
+ * Footer
+ *  -CopyRights
+ *  -Terms and Conditions
+ */
