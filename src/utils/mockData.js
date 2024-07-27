@@ -1,59 +1,141 @@
-const restaurantList =[
-    {
-      "name": "Spice Heaven",
-      "id": "1",
-      "cuisines": ["Indian", "Chinese", "Thai"],
-      "rating": 4.5,
-      "duration": "30 mins",
-      "location": "Downtown",
-      "food_pics": [
-        "https://as1.ftcdn.net/v2/jpg/01/17/97/62/1000_F_117976275_RtssFfh9kkodgYgCUJCkdIi4EV7mHZKY.jpg"
-      ]
+let listOfRestaurant = [
+  {
+    info: {
+      id: "255655",
+      name: "Cake & Cream",
+      cloudinaryImageId: "ac57cc371e73f96f812613f58457aca3",
+      areaName: "Jairaj Nagar",
+      costForTwo: "₹200 for two",
+      cuisines: ["Bakery", "Hot-dog", "pastery", "Cake", "Thick- shake"],
+      avgRating: 4.3,
+      veg: true,
+      parentId: "54670",
+      avgRatingString: "4",
+      totalRatingsString: "20+",
     },
-    {
-      "name": "Pasta Paradise",
-      "id": "2",
-      "cuisines": ["Italian", "Mediterranean"],
-      "rating": 4.7,
-      "duration": "25 mins",
-      "location": "Uptown",
-      "food_pics": [
-        "https://as1.ftcdn.net/v2/jpg/03/02/21/92/1000_F_302219263_NDP2Cfs8uacAeOAcaV7cppbbd2LrDoEQ.jpg"
-      ]
+  },
+  {
+    info: {
+      id: "350363",
+      name: "Haldiram's Sweets and Namkeen",
+      cloudinaryImageId: "25c3a7d394d6c5556b134385f7d665b0",
+      avgRating: 4.6,
+      veg: true,
+      cuisines: [
+      "North Indian",
+      "South Indian",
+      "Chinese",
+      "Pizzas",
+      "Fast Food",
+      ],
+    
+      parentId: "391465",
+      avgRatingString: "4.6",
+      totalRatingsString: "100+",
     },
-    {
-      "name": "Sushi World",
-      "id": "3",
-      "cuisines": ["Japanese", "Korean"],
-      "rating": 4.6,
-      "duration": "35 mins",
-      "location": "Midtown",
-      "food_pics": [
-        "https://as1.ftcdn.net/v2/jpg/00/53/35/38/1000_F_53353803_17AM3erTyvSB29TquOFNk2KLxLIu4quv.jpg"
-      ]
+  },
+  {
+    info: {
+      id: "154891",
+      name: "Rasraj Restaurant",
+      cloudinaryImageId: "egbr63ulc8h1zgliivd8",
+      locality: "Civil Line",
+      areaName: "Civil Lines",
+      costForTwo: "₹250 for two",
+      cuisines: [
+      "North Indian",
+      "South Indian",
+      "Street Food",
+      "Chinese",
+      "Pizzas",
+      "Fast Food",
+      ],
+      avgRating: 4.2,
     },
-    {
-      "name": "Burger Barn",
-      "id": "4",
-      "cuisines": ["American", "Fast Food"],
-      "rating": 3.2,
-      "duration": "20 mins",
-      "location": "West End",
-      "food_pics": [
-        "https://as1.ftcdn.net/v2/jpg/07/88/27/84/1000_F_788278439_W1VTze36svaJJtcSTVQkY1ZqrZZk0HxL.jpg"
-      ]
+  },
+  {
+    info: {
+      id: "745961",
+      name: "Balaji Restaurant",
+      cloudinaryImageId: "b8672fe52944c3599ea324d99d608300",
+      locality: "Sai Rubber Stamp",
+      areaName: "Jairaj Nagar",
+      costForTwo: "₹149 for two",
+      cuisines: ["South Indian", "North Indian"],
+      avgRating: 4.8,
+      veg: true,
     },
-    {
-      "name": "Green Delight",
-      "id": "5",
-      "cuisines": ["Vegan", "Vegetarian"],
-      "rating": 3.8,
-      "duration": "30 mins",
-      "location": "East Side",
-      "food_pics": [
-        "https://as1.ftcdn.net/v2/jpg/01/67/50/20/1000_F_167502049_xsTCWIheY3z8RRHAdc5ZiIzckBkVoysb.jpg"
-      ]
-    }
-  ];
+  },
+  {
+    info: {
+      id: "798745",
+      name: "Friends Restaurant",
+      cloudinaryImageId: "b14cd9fc40129fcfb97aa7e621719d07",
+      locality: "Gayatri Nagar",
+      areaName: "Jairaj Nagar",
+      costForTwo: "₹150 for two",
+      cuisines: ["North Indian", "Chinese", "Biryani", "Tandoor", "Kebabs"],
+      avgRating: 4.2,
+      parentId: "84308",
+      },
+  },
+  {
+    info: {
+      id: "314737",
+      name: "RASOI the KITCHEN",
+      cloudinaryImageId: "yjymo9nhyn7rhvafsrd3",
+      locality: "Sriram Chowk",
+      areaName: "Bazar Ward",
+      costForTwo: "₹200 for two",
+      cuisines: ["North Indian", "Maharashtrian", "Chinese",
+    "Thalis"],
+      avgRating: 3.9,
+      parentId: "167341",
+    },
+  },
+  {
+    info: {
+      id: "201454",
+      name: "Morsels restaurants",
+      cloudinaryImageId: "aafe71251ef5328784652dc838cd91f3",
+      locality: "Bazar Ward",
+      areaName: "Chandrapur Locality",
+      costForTwo: "₹300 for two",
+      cuisines: ["North Indian", "South Indian"],
+      avgRating: 3.2,
+      veg: true,
+      parentId: "139266",
+      avgRatingString: "4.2",
+    },
+  },
+  {
+    info: {
+      id: "266124",
+      name: "Trimurti Restaurant",
+      cloudinaryImageId: "8135c0066b06e2925c66930be4e9ffb5",
+      locality: "Bazar Ward",
+      areaName: "Chandrapur Locality",
+      costForTwo: "₹150 for two",
+      cuisines: ["Desserts"],
+      avgRating: 3.9,
+      veg: true,
+      parentId: "217751",
+      avgRatingString: "4.4",
+    },
+  },
+  {
+    info: {
+      id: "509254",
+      name: "Saha Restaurant",
+      cloudinaryImageId: "z1ez4uc9idul2uj2v87g",
+      areaName: "Jairaj Nagar",
+      costForTwo: "₹300 for two",
+      cuisines: ["North Indian", "Biryani", "Thalis", "Beverages"],
+      avgRating: 3.7,
+      parentId: "174585",
+      avgRatingString: "3.7",
+    },
+  },
+ ];
 
-  export default restaurantList;
+ export default listOfRestaurant;
