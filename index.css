@@ -23,6 +23,11 @@
     margin: 10px;
     font-size: 22px;
 }
+
+.login-btn{
+    width: 100px;
+    height: 50px;
+}
 /* * Header Css Ends */
 
 /* * Body, restauant container Css Starts */
@@ -44,9 +49,12 @@
     width: 100%;
     height: 200px;
 }
+.filter{
+    display: flex;
+}
 
-.filter-btn {
-    margin: 5px;
+.filter-btn{
+    margin-left: 5px;
 }
 /* * Body restauant container  Css Ends */
 

@@ -100,6 +100,11 @@ Syntax	    Export statement	                     Import statement
 Default	    export default function Button() {}	     import Button from './Button.js';
 Named	    export function Button() {}	             import { Button } from './Button.js';
 
+# useEffect
+-   if no dependency array => useEffect is called on every render.
+-   if dependency array is empty = [] => useEffect is called on initial render (just once).
+-   if dependency array is [loginBtn] => called everytime loginBtn is updated.
+
 
 
 
