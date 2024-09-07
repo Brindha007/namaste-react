@@ -26,7 +26,6 @@ const Header = () => {
           <li>
             <Link to="/contact">Contact Us</Link>
           </li>
-          <li>Sign In</li>
           <li>Cart</li>
           <button
             className="login-btn"

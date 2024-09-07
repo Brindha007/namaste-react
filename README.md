@@ -105,6 +105,9 @@ Named	    export function Button() {}	             import { Button } from './But
 -   if dependency array is empty = [] => useEffect is called on initial render (just once).
 -   if dependency array is [loginBtn] => called everytime loginBtn is updated.
 
+# 2 types of Routing in web apps
+- Client side Routing- all the components are already loaded into app. Not fetching new page. (Single page application - one page just components getting       interchanged via client side routing).
+- Server side Routing- Means when click on anchor tag it reloads whole page and sends network call to about.html fetches html and render it on page.
 
 
 
