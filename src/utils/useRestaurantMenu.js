@@ -13,6 +13,7 @@ const useRestaurantMenu = (resID) =>{
         const data = await fetch(MENU_API + resID);
         const json = await data.json();
         setResMenuInfo(json?.data);
+        console.log(json);
     }
     return  resMenuInfo;
 }
