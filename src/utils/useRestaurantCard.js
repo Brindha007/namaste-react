@@ -4,6 +4,7 @@ import { RESTAURANT_CARD_API } from "./constants";
 const useRestaurantCard = () =>{
     const [resList,setResList] = useState([]);
     const [filteredRestaurant,setFilteredRestaurant] = useState([]);
+    
 
     useEffect(()=>{
         fetchData();

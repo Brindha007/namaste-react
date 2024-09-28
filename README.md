@@ -109,5 +109,13 @@ Named	    export function Button() {}	             import { Button } from './But
 - Client side Routing- all the components are already loaded into app. Not fetching new page. (Single page application - one page just components getting       interchanged via client side routing).
 - Server side Routing- Means when click on anchor tag it reloads whole page and sends network call to about.html fetches html and render it on page.
 
+# /** Higer-Order Component (HOC) is function takes a component and return new version of component*/
+
+//Input --> Restaurant Output --> TopMostRated Restaurant
+
+/**withTopMostRatedLabel is HOC which takes Restaurant component and return a new component with Label on top of it. */
+
+- A Component is a function that returns a piece of JSX.
+
 
 

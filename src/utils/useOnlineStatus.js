@@ -13,7 +13,7 @@ const useOnlineStatus = () => {
             setOnlineStatus(false);
         })
     },[]);
-    console.log('current status '+onlineStatus);
+    
     //Output return boolean value of Online status
     return onlineStatus;
 }
