@@ -1,9 +1,10 @@
 import RestaurantCards, { withTopMostRatedLabel } from "./RestaurantCards";
-import { useState } from "react";
+import { useContext, useState } from "react";
 import Shimmer from "./Shimmer";
 import { Link } from "react-router-dom";
 import useRestaurantCard from "../utils/useRestaurantCard";
 import useOnlineStatus from "../utils/useOnlineStatus";
+import UserContext from "../utils/UserContext";
 
 export const Body = () => {
   /** Create custom hook called "useRestaurantCard" for Restaurant card to fetch api data */
@@ -14,6 +15,8 @@ export const Body = () => {
   const RestaurantTopMostRatedLabel = withTopMostRatedLabel(RestaurantCards);
 
   const onlineStatus = useOnlineStatus();
+
+  const {loggedInUser,setUserName} = useContext(UserContext);
 
   if (onlineStatus === false) {
     return (
@@ -47,6 +50,11 @@ export const Body = () => {
           >
             Search
           </button>
+          {/* Updating input text field using useContext from App.js */}
+          <label>Lively updating name using useContext : </label>
+          <input type="text" className="rounded-sm p-1 border border-black " value={loggedInUser} onChange={(e) => {
+            setUserName(e.target.value);
+          }} />
         </div>
         <div className="search m-4 p-4">
           <button

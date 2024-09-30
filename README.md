@@ -117,5 +117,18 @@ Named	    export function Button() {}	             import { Button } from './But
 
 - A Component is a function that returns a piece of JSX.
 
+# Lifting state up / Sharing State Between components
+ - Sometimes, you want the state of two components to always change together. To do it, remove state from both of them, move it to their closest common parent, and then pass it down to them via props. This is known as lifting state up.
+
+ - you need to “lift their state up” to a parent component in three steps:
+
+    1.Remove state from the child components.
+    2.Pass hardcoded data from the common parent.
+    3.Add state to the common parent and pass it down together with the event handlers.
+
+# Controlled and Uncontrolled components
+ - It is common to call a component with some local state “uncontrolled”. For example, the original Panel component with an isActive state variable is uncontrolled because its parent cannot influence whether the panel is active or not.
+
+ - In contrast, you might say a component is “controlled” when the important information in it is driven by props rather than its own local state. This lets the parent component fully specify its behavior. The final Panel component with the isActive prop is controlled by the Accordion component.
 
 
