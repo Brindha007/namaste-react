@@ -16,7 +16,8 @@ export const Body = () => {
 
   const onlineStatus = useOnlineStatus();
 
-  const {loggedInUser,setUserName} = useContext(UserContext);
+  //useContext for accessing setUserName function from App.js
+  const { loggedInUser, setUserName } = useContext(UserContext);
 
   if (onlineStatus === false) {
     return (
@@ -52,9 +53,14 @@ export const Body = () => {
           </button>
           {/* Updating input text field using useContext from App.js */}
           <label>Lively updating name using useContext : </label>
-          <input type="text" className="rounded-sm p-1 border border-black " value={loggedInUser} onChange={(e) => {
-            setUserName(e.target.value);
-          }} />
+          <input
+            type="text"
+            className="rounded-sm p-1 border border-black "
+            value={loggedInUser}
+            onChange={(e) => {
+              setUserName(e.target.value);
+            }}
+          />
         </div>
         <div className="search m-4 p-4">
           <button

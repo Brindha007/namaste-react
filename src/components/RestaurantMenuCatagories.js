@@ -1,4 +1,4 @@
-import MenuCatagoriesItemList from "./MenuCatagoriesItemsList";
+import MenuItemList from "./MenuItemsList";
 import { useState } from "react";
 
 const RestaurantMenuCatagories = ({data,showItems,setShowIndex}) =>{
@@ -16,7 +16,7 @@ const RestaurantMenuCatagories = ({data,showItems,setShowIndex}) =>{
                     {showItems ? <span>🔼</span> : <span>🔽</span>} 
                 </div>
                 {/* Accordion Body*/}
-                {showItems && <MenuCatagoriesItemList items={data.itemCards}/>} 
+                {showItems && <MenuItemList items={data.itemCards}/>} 
             </div>
         </div>
     );
