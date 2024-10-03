@@ -131,4 +131,25 @@ Named	    export function Button() {}	             import { Button } from './But
 
  - In contrast, you might say a component is “controlled” when the important information in it is driven by props rather than its own local state. This lets the parent component fully specify its behavior. The final Panel component with the isActive prop is controlled by the Accordion component.
 
+ # Redux Toolkit (RTK)
+ - Install @reduxjs/toolkit and react-redux
+ - Build our store
+ - Connect our store to app
+ - Slice (cartSlice)
+ - dispatch (action)
+ - Selector
+
+ # Types of Testing (developer)
+  - Unit testing
+  - Integration testing
+  - End to end Testing - e2e testing
+
+# Setting up Testing in our app
+    - Installed react Tesing library
+    - Installed Jest 
+    - Installed Babel dependencies
+    - Configured Babel
+    - Configured Parcel config file (.parcelrc) to disable To disable Babel transpilation in Parcel.
+
+# Note: JavaScript Babel configs (e.g. babel.config.js) should be avoided. These cause Parcel’s caching to be less effective, which means all of your JS files will be recompiled each time you restart Parcel. To avoid this, use a JSON-based config format instead (e.g. babel.config.json).
 
