@@ -150,6 +150,7 @@ Named	    export function Button() {}	             import { Button } from './But
     - Installed Babel dependencies
     - Configured Babel
     - Configured Parcel config file (.parcelrc) to disable To disable Babel transpilation in Parcel.
-
+    - jest configuration (npx jest --init)
+    - Install jsdom library (npm install -D jest-environment-jsdom)
 # Note: JavaScript Babel configs (e.g. babel.config.js) should be avoided. These cause Parcel’s caching to be less effective, which means all of your JS files will be recompiled each time you restart Parcel. To avoid this, use a JSON-based config format instead (e.g. babel.config.json).
 
