@@ -15,7 +15,7 @@ const Header = () => {
 
   /** Subscribing to the store using selector. */
   const cartItems = useSelector((store) => store.cart.items);
-  console.log(cartItems);
+  //console.log(cartItems);
 
   return (
     <div className="flex justify-between shadow-lg" id="header_container">
