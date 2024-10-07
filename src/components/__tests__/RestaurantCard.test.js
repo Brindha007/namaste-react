@@ -16,6 +16,6 @@ test("Should render Restaurant cards component with props data", () => {
 test("Should render Restaurant cards component with Top most Rated label", () => {
     const RestaurantCardTopRated = withTopMostRatedLabel(RestaurantCards)
     render(<RestaurantCardTopRated {...MOCK_LABEL_DATA}/>);
-    const CardData = screen.getByLabelText("Top Most Rated");
+    const CardData = screen.getByText("Top Most Rated");
     expect(CardData).toBeInTheDocument();
 });

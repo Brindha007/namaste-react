@@ -35,7 +35,7 @@ const Header = () => {
             <Link to="/contact">Contact Us</Link>
           </li>
           <li className="px-4">
-            <Link to="/cart">Cart 🛒 ({cartItems.length} items)</Link>
+            <Link to="/cart">Cart 🛒 ({cartItems.length} {cartItems.length > 1 ? 'items' : 'item'})</Link>
           </li>
           <button
             className="login-btn"

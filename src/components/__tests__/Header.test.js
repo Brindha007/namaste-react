@@ -31,7 +31,7 @@ test ("Should render Header component with Cart 0 items ", () => {
            </Provider>
        </BrowserRouter>
    );
-         const cartItems = screen.getByText("Cart 🛒 (0 items)");
+         const cartItems = screen.getByText("Cart 🛒 (0 item)");
          //const cartItems = screen.getByText(/Cart/);
 
    

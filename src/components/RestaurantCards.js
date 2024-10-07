@@ -9,7 +9,7 @@ const RestaurantCards = (props) => {
   //console.log(props);
  
   return (
-    <div className="res-cards m-4 p-4 w-[230px] h-[480px] bg-slate-100 rounded-md hover:bg-gray-200">
+    <div data-testid="resCard" className="res-cards m-4 p-4 w-[230px] h-[480px] bg-slate-100 rounded-md hover:bg-gray-200">
       <img
         className="rounded-lg w-56 h-[200px]"
         alt="No image"
@@ -32,7 +32,6 @@ const RestaurantCards = (props) => {
 
 export const withTopMostRatedLabel = (RestaurantCards) => {
   return(props) =>{
-    console.log(props);
       return(
         <div>
             <label className="absolute bg-black text-white ml-6 mt-2 p-1 rounded-md " aria-labelledby="topmostrated">Top Most Rated</label>
